@@ -1,0 +1,28 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link rel='stylesheet' type='text/css' href="{% static 'css/form.css' %}">
+</head>
+<body>
+
+    <div class="container">
+      <form action="../home" method="post">
+        <p onclick="document.location = '../'">{{ title }}</p>
+        <input name="email" type="email" placeholder="Email"><br>
+        <input name="password" type="password" placeholder="Password"><br>
+        <input type="submit" value="Sign in"><br>
+        <a href="#">{{ error }}</a>
+      </form>
+
+      <div class="drops">
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+      </div>
+    </div>
+
+</body>

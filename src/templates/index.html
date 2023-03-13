@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel='stylesheet' type='text/css' href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>{{ title }}</h1>
+            <a href="/form">INSCRIPTION</a>
+        </nav>
+    </header>
+    <main>
+    {{ container|safe }}
+    </main>
+</body>
+</html>
